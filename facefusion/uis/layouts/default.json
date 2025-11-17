@@ -1,0 +1,14 @@
+{
+    "title": "FaceFusion 3.0.0",
+    "tabs": [
+        {
+            "name": "Main",
+            "elements": [
+                "source_image",
+                "target_video",
+                "options",
+                "run_button"
+            ]
+        }
+    ]
+}
