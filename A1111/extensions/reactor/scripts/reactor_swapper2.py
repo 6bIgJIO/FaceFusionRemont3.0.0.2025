@@ -303,7 +303,7 @@ def half_det_size(det_size):
 
 def analyze_faces(img_data: np.ndarray, det_size=(640, 640), det_thresh=0.5, det_maxnum=0):
     logger.info("Applied Execution Provider: %s", PROVIDERS[0])
-    face_analyser = copy.deepcopy(getAnalysisModel())
+    face_analyser = getAnalysisModel()
     # Принудительно ставим провайдер CPU для детекции
     face_analyser.det_model.session._providers = ['CPUExecutionProvider']
     face_analyser.prepare(ctx_id=0, det_thresh=det_thresh, det_size=det_size)
